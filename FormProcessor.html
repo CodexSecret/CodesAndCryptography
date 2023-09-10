@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Form Processor</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="images/Logo.png">
+</head>
+<body>
+	<header>
+      <a href="index.html"><p style="font-family: fontMine; font-size: 30px; color: black;">&numsp;Codes and Cryptography</p></a></a>
+      <ul id="menu">
+  			<li><a href="../../about.html">About</a></li>
+  			<li><a href="../../puzzles.html">Puzzles</a></li>
+        <li><a href="../../tutorial.html">Tutorial</a></li>
+  			<li><a href="../../contact.html">Contact</a></li>
+  		</ul>
+    </header>
+<script type="text/javascript">
+document.write("<h1>Thank you for submitting your form! You entered: </h1>");
+	
+var form = location.search;
+var form = form.replace('?', '')
+var formLink = form.split("&");
+var email = formLink[1];
+var email = email.replace("%40","@");
+formLink.splice(1,1,email);
+document.write("<p>" + formLink[0] + "</p>")
+document.write("<p>" + formLink[1] + "</p>")
+document.write("<p>" + formLink[2] + "</p>")
+document.write("<p>" + formLink[3] + "</p>")
+
+</script>
+</body>
+</html>
+

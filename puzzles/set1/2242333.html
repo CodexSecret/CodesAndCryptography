@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Puzzle 3</title>
+    <link rel="stylesheet" href="../../styles.css">
+	<link rel="icon" href="../../images/Logo.png">
+	<script src="../code.js"></script>
+	<script type="text/javascript">
+		function codeGenerator(){
+			var submitted = document.getElementById('answer_input').value;
+			var link = window.location.href;
+			var part1 = link.slice(0, link.lastIndexOf('/'))
+			var part2 = "/"
+			var part3 = ".html"
+			var submitted = submitted.toUpperCase();
+			var submittedCode = code(submitted);
+			var submittedCode = String(submittedCode);
+			var answerCode = "2169423370020";
+
+			if (submittedCode === answerCode){
+				window.location = String(part1.concat(part2, submitted, part3));
+			}
+
+			else{
+				alert("Wrong Answer!");
+			}
+		}
+	</script>
+  </head>
+  <body>
+    <header>
+      <a href="../../index.html"><p style="font-family: fontMine; font-size: 30px; color: black;">&numsp;Codes and Cryptography</p></a>
+      <ul id="menu">
+  			<li><a href="../../about.html">About</a></li>
+  			<li><a href="../../puzzles.html">Puzzles</a></li>
+        <li><a href="../../tutorial.html">Tutorial</a></li>
+  			<li><a href="../../contact.html">Contact</a></li>
+  		</ul>
+    </header>
+    <h1>Puzzle 3</h1>
+	<img src="../../images/Set 1 Puzzle 3.png" alt="Puzzle 3" class="center">
+	<br>
+	<div style="text-align: center">
+		<input type="text" class="answer" id="answer_input" placeholder="********">
+		<button type="button" onClick="codeGenerator()">Submit</button>
+	</div>
+  </body>
+</html>

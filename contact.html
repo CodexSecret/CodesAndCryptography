@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="images/Logo.png">
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><p style="font-family: fontMine; font-size: 30px; color: black;">&numsp;Codes and Cryptography</p></a>
+      <ul id="menu">
+  			<li><a href="about.html">About</a></li>
+  			<li><a href="puzzles.html">Puzzles</a></li>
+        <li><a href="tutorial.html">Tutorial</a></li>
+  			<li><a href="contact.html">Contact</a></li>
+  		</ul>
+    </header>
+	  <br>
+    <div class="container">
+      <form method="get" action="FormProcessor.html">
+        <fieldset>
+          <h3>Want to contact me?</h3>
+          <p>Name: </p>
+          <input type="text" id="contactname" name="contactname" placeholder="Name" required>
+	      <p>Email: </p>
+          <input type="email" id="contactemail" name="contactemail" placeholder="Email" required></input>
+          <p>Subject: </p>
+          <input type="text" id="contactsubject" name="contactsubject" placeholder="Subject" required></input>
+          <p>Message: </p>
+		  <input type="text" name="message" id="message" placeholder="Message" style="width: 400px;height: 200px" required>
+          <br><br>
+          <input style="width: 440px;" type="submit" name="submitbutton">
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

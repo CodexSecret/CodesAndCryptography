@@ -1,0 +1,175 @@
+/*Desktop View*/
+
+body{
+  font-family: Open Sans,sans-serif;
+  background: linear-gradient(-50deg, #70e1f5, #ffd194);
+  background-size: 1000% 1000%;
+  animation: gradient 20s infinite;
+}
+
+@font-face{
+	font-family: fontMine;
+	src: url("images/GreatVibes-Regular.ttf")
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header{
+  overflow: hidden;
+  background-color: #cfb53b;
+  border-radius: 2%;
+}
+
+header a {
+  float: left;
+  color: #f2f2f2;
+  text-decoration: none;
+  text-align: center;
+}
+
+header a:hover {
+  background-color: #ddd;
+  padding: 0.25em;
+}
+
+h1, h2, h3{
+  text-align: center;
+}
+
+.normaltext{
+	text-align: start;
+}
+
+p{
+  font-size: 130%;
+  text-align: center;
+}
+
+table{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+}
+
+hr{
+  height: 1px;
+  background-color: grey;
+  border: none;
+}
+
+.puzzlebox{
+  border: 3px;
+  border-style:solid;
+  padding: 1%;
+  background-color: mintcream;
+  color: black;
+  text-align: center;
+  font-size: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.answer {
+  border: 2px solid white;
+  text-align: center;
+  background-color: black;
+  height: 30px;
+  width: 150px;
+  border-radius: 15px;
+  color:white;
+}
+
+#menu{
+	float: right;
+}
+
+#menu li{
+	display:inline-block;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 8px;
+  font-size: 112.5%;
+}
+
+.container{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+form{
+	background-color: #21217A;
+}
+
+form h3{
+	color: white
+}
+
+form p{
+	color: white;
+	text-align: center
+}
+
+form input{
+	border:0;
+	padding: 20px;
+	width: 400px;
+}
+
+.slicknav_menu{
+	display: none
+}
+
+/*Tablet View*/
+
+@media (max-width: 768px){
+	#menu li{
+		display:list-item;
+		list-style-type: none;
+	}
+	#menu li a {
+	    padding: 0%;
+	    font-size: 112.5%;
+	}
+	
+	header{
+	  border-radius: 1px;
+	}
+}
+
+/*Mobile View*/
+
+@media (max-width: 400px){
+	#menu li{
+		display:list-item;
+		list-style-type: none;
+	}
+	
+	#menu li a {
+	  padding: 0%;
+	  font-size: 112.5%;
+	}
+	
+	header{
+	  border-radius: 1px;
+	}
+}
